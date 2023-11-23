@@ -1,26 +1,12 @@
 {
-  "name": "nasa_20110403",
-  "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "install-server": "npm install --prefix server",
-    "install-client": "npm install --prefix client",
-    "install": "npm run install-client &&  npm run install-server ",
-    "server": "npm run watch --prefix server",
-    "client": "npm start --prefix client",
-    "watch": "start npm run server & start npm run client",
-    "deploy": "npm run build --prefix client && npm start --prefix server",
-    "test": "npm run test --prefix server && npm run test --prefix client"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "client": "^0.0.1",
-    "cwd": "^0.10.0",
-    "morgan": "^1.10.0",
-    "nasa-fe": "file:client",
-    "server": "file:server"
+    "express": "^4.18.2",
+    "passport-google-oauth20": "^2.0.0"
+  },
+  "devDependencies": {
+    "cookie-session": "^2.0.0",
+    "dotenv": "^16.3.1",
+    "helmet": "^7.1.0"
   }
 }
